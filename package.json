@@ -1,0 +1,20 @@
+{
+  "name": "Electron_App",
+  "version": "1.0.0",
+  "description": "使用nodejs的Electron模块开发桌面应用",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/gy-dev/Electron_App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^3.0.9"
+  }
+}
