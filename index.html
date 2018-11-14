@@ -1,19 +1,150 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
+    <script type="text/javascript" src="js/LAB.min.js"></script>
+    <link href="css/main.css" rel="stylesheet"/>
 
-    <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
+    <script type="text/javascript">
+		$LAB.script("js/version.js?version=" + (new Date).getTime())
+			.wait(function(){
+        			$LAB.script("js/jquery-1.11.1.min.js")
+                		.wait(function () {	
+							if (typeof module === 'object') {window.jQuery = window.$ = module.exports;};
+                			$LAB.script("js/main.js?version=" + version_web)
+                		})
+			})
     </script>
-  </body>
+</head>
+<body>
+	<div class="mainBody">
+		<div style="float: right;margin-right: 30px;">
+			<div class="floatLeft" id="lg_Text"></div>
+			<div class="floatLeft" style="margin-left: 5px;">
+				<select id="lgSel">
+					<option value="0" selected="selected">English</option>
+					<option value="1">Russian</option>
+	            </select>
+			</div>
+		</div>
+		<div class="floatLeft leftBody" >
+			
+			<div id="" style="margin: 15px;">
+				<div>
+					<div class="floatLeft" style="margin-left: 20px;" id='DeviceType_Text'></div>
+					<div class="floatLeft" style="margin-left: 5px;">
+						<select id="DeviceType">
+			            </select>
+					</div>
+					<div class="floatLeft" style="margin-left: 20px;" id="HardVersion_Text"></div>
+					<div class="floatLeft" style="margin-left: 5px;">
+						<select id="HardVersion">
+			            </select>
+					</div>
+					<div class="floatLeft" style="margin-left: 20px;" id="Status_Text"></div>
+					<div class="floatLeft" style="margin-left: 5px;">
+						<select id="Status">
+			            </select>
+					</div>
+					<div class="floatLeft" style="margin-left: 20px;" id="Mode_Text"></div>
+					<div class="floatLeft" style="margin-left: 5px;">
+						<select id="Mode">
+			            </select>
+					</div>
+				</div>
+			</div>
+			<div class="clearBoth"></div>
+			
+			<div style="margin: 15px;">
+				<div>
+					<div class="floatLeft channel" id="Chn_Text"></div>
+					<div class="floatLeft channleTypeDiv textDiv" id="ChannelType_Text"></div>
+					<div class="floatLeft intelligentDiv textDiv" id="Intelligent_Text" style="display:none;"></div>
+					<div class="floatLeft cameraType textDiv" id="CameraType_Text"></div>
+					<div class="floatLeft resDiv textDiv" id="res_Text"></div>
+					<div class="floatLeft fpsDiv textDiv" id="fps_Text"></div>
+					<div class="floatLeft bitDiv textDiv" id="bit_Text"></div>
+					<div class="floatLeft previewDiv">
+						<div class="floatLeft textDiv" style="margin-left: 30px;" id="preview_Text"></div>
+<!--						<input type="checkbox" class="floatLeft" id="preCheck" />-->
+					</div>
+					<div class="floatLeft playbackDiv" id=''>
+						<div class="floatLeft textDiv" style="width: 80px; overflow:hidden; white-space:nowrap;" id="playback_Text"></div>
+<!--						<input type="checkbox" class="floatLeft" id="pbCheck" />-->
+					</div>
+				</div>
+				<div class="clearBoth"></div>
+				<div id="channelsList" class="floatLeft">
+					
+				</div>
+			</div>
+		</div>
+		<div class="floatLeft rightBody" >
+			<div class="calc_div" id="previewDiv" style="display: none;">
+				<div class="fontText" id="pre_Text"></div>
+				<div class="calcDiv">
+					<div class="floatLeft divText" id="performance_Text"></div>
+					<div class="floatLeft" style="margin-top: 10px;">
+						<div class="Bar">
+					        <div id="performanceBar" style="width:0%;">
+					            <span id="performanceSpan">0%</span>
+					        </div>
+					    </div>
+					</div>
+				</div>
+				<div class="calcDiv">
+					<div class="floatLeft divText" id="memory_Text"></div>
+					<div class="floatLeft" style="margin-top: 10px;">
+						<div class="Bar">
+					        <div id="memoryBar" style="width:0%;">
+					            <span id="memorySpan">0%</span>
+					        </div>
+					    </div>
+					</div>
+				</div>
+				<div class="calcDiv" style="height: 20px;">
+					<div class="floatLeft divText" id="bandwidth_Text"></div>
+					<div class="floatLeft">
+						<div class="Bar">
+					        <div id="bandwidthBar" style="width:0%;">
+					            <span id="bandwidthSpan">0%</span>
+					        </div>
+					    </div>
+					</div>
+				</div>
+				<div class="calcDiv" style="height: 20px;">
+					<div class="floatLeft" id="totalBandwidth_Text"></div>
+					<div class="floatLeft" style="margin-left: 10px;" id="totalBandwidth"></div>
+				</div>
+			</div>
+			<div class="calc_div" id="pbDiv">
+				<div class="fontText" id="pb_Text"></div>
+				<div class="calcDiv">
+					<div class="floatLeft divText" id="pbPerformance_Text"></div>
+					<div class="floatLeft" style="margin-top: 10px;">
+						<div class="Bar">
+					        <div id="pbPerformanceBar" style="width:0%;">
+					            <span id="pbPerformanceSpan">0%</span>
+					        </div>
+					    </div>
+					</div>
+				</div>
+				<div class="calcDiv">
+					<div class="floatLeft divText" id="pbMemory_Text"></div>
+					<div class="floatLeft" style="margin-top: 10px;">
+						<div class="Bar">
+					        <div id="pbMemoryBar" style="width:0%;">
+					            <span id="pbMemorySpan">0%</span>
+					        </div>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+</body>
 </html>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<DeviceType>D1004-N,D1004-N-A,D1004-N-T,D1008-N,D1008-N-A,D1008-N-T</DeviceType>
+	<D1004-N>
+		<HardVersion>DM-268</HardVersion>
+		<Mode>DVR,XVR</Mode>
+		<Status>Normal</Status>
+	</D1004-N>
+	<D1004-N-A>
+		<HardVersion>DM-334</HardVersion>
+		<Mode>DVR,XVR</Mode>
+		<Status>Normal</Status>
+	</D1004-N-A>
+	<D1004-N-T>
+		<HardVersion>DM-274</HardVersion>
+		<Mode>DVR,XVR</Mode>
+		<Status>Normal</Status>
+	</D1004-N-T>
+	<D1008-N>
+		<HardVersion>DM-292</HardVersion>
+		<Mode>DVR,XVR</Mode>
+		<Status>Normal,Intelligent</Status>
+	</D1008-N>
+	<D1008-N-A>
+		<HardVersion>DM-332</HardVersion>
+		<Mode>DVR,XVR</Mode>
+		<Status>Normal,Intelligent</Status>
+	</D1008-N-A>
+	<D1008-N-T>
+		<HardVersion>DM-298</HardVersion>
+		<Mode>DVR,XVR</Mode>
+		<Status>Normal,Intelligent</Status>
+	</D1008-N-T>
+</Root>

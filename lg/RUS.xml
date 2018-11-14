@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  	<StringTable>
+		<string id="IDS_DeviceType">тип устройства</string>
+		<string id="IDS_HardVersion">жесткий вариант</string>
+		<string id="IDS_Mode">режим</string>
+		<string id="IDS_Status">статус</string>
+		<string id="IDS_Chn">канал</string>
+		<string id="IDS_ChnType">канал типа</string>
+		<string id="IDS_Intelligent">умный</string>
+		<string id="IDS_CameraType">камера</string>
+		<string id="IDS_res">резолюция</string>
+		<string id="IDS_fps">кадр</string>
+		<string id="IDS_bit">ставка (kbps)</string>
+		<string id="IDS_Preview">Просмотр</string>
+		<string id="IDS_Playback">Воспроизведение</string>
+		<string id="IDS_Performance">расшифровки показателей</string>
+		<string id="IDS_Memory">расшифровать памяти</string>
+		<string id="IDS_Bandwidth">пропускная способность</string>
+		<string id="IDS_TotalBandwidth">общая пропускная способность:</string>
+		<string id="IDS_Analog">аналоговый</string>
+		<string id="IDS_Digital">цифровой</string>
+		<string id="IDS_None">нет</string>
+		<string id="IDS_Mainstream">Основной поток</string>
+		<string id="IDS_Substream">Удаленный поток</string>
+		<string id="IDS_Mobilestream">Мобильный поток</string>
+		<string id="IDS_Language">язык</string>
+		<string id="IDS_ENU">английский</string>
+		<string id="IDS_RUS">русский</string>
+		<string id="IDS_tip_preview">устройство на воспроизведение интерфейс и не могут быть предусмотрены.</string>
+		<string id="IDS_tip_playback">устройство играет назад во времени, только с одним каналом выбраны воспроизведения.</string>
+	</StringTable>
+</Root>

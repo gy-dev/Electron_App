@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  	<StringTable>
+		<string id="IDS_DeviceType">Device Type</string>
+		<string id="IDS_HardVersion">Hard Version</string>
+		<string id="IDS_Mode">Mode</string>
+		<string id="IDS_Status">Status</string>
+		<string id="IDS_Chn">Channel</string>
+		<string id="IDS_ChnType">Channel Type</string>
+		<string id="IDS_Intelligent">Intelligent</string>
+		<string id="IDS_CameraType">Camera</string>
+		<string id="IDS_res">Resolution</string>
+		<string id="IDS_fps">Frame</string>
+		<string id="IDS_bit">Rate (kbps)</string>
+		<string id="IDS_Preview">Preview</string>
+		<string id="IDS_Playback">Playback</string>
+		<string id="IDS_Performance">Decode Performance</string>
+		<string id="IDS_Memory">Decode Memory</string>
+		<string id="IDS_Bandwidth">Bandwidth</string>
+		<string id="IDS_TotalBandwidth">Total Bandwidth:</string>
+		<string id="IDS_Analog">Analog</string>
+		<string id="IDS_Digital">Digital</string>
+		<string id="IDS_None">None</string>
+		<string id="IDS_Mainstream">Mainstream</string>
+		<string id="IDS_Substream">Substream</string>
+		<string id="IDS_Mobilestream">Mobilestream</string>
+		<string id="IDS_Language">Language</string>
+		<string id="IDS_ENU">English</string>
+		<string id="IDS_RUS">Russian</string>
+		<string id="IDS_tip_preview">The device is in the playback interface and cannot be previewed.</string>
+		<string id="IDS_tip_playback">The device is playing back in time, with only one playback channel selected.</string>
+	</StringTable>
+</Root>

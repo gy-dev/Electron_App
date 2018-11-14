@@ -1,0 +1,149 @@
+﻿.mainBody{
+	width: 1430px;
+	overflow:auto;
+}
+
+.leftBody{
+	width: 1080px;
+}
+
+.rightBody{
+	width: 320px;;
+}
+
+.calc_div{
+	border:1px solid black;
+	padding: 10px;
+	margin-top: 20px;
+}
+
+.calcDiv{
+	width: 300px;
+	height: 40px;
+	margin-top: 10px;
+}
+
+.fontText{
+	font-weight:bold;
+	font-size: 24px;
+}
+
+.divText{
+	width: 100px;
+}
+
+#channelsList{
+	overflow:auto; 
+	width:1060px; 
+	height:600px;
+}
+
+.floatLeft{
+	float: left;
+}
+
+.clearBoth{
+	clear: both;
+}
+
+.channel{
+	width: 60px;
+	text-align: center;
+}
+
+.channelTypeSelect{
+	width: 70px;
+	margin-left: 12px;
+}
+
+.cameratypeSelect{
+	width: 105px;
+}
+
+.blankDiv{
+	height: 20px;
+}
+
+.textDiv{
+	text-align: center;
+}
+
+.intelligentDiv{
+	width: 70px;
+}
+
+.channleTypeDiv{
+	width: 100px;
+}
+
+.cameraType{
+	width: 105px;
+}
+
+.resDiv{
+	width: 195px;
+}
+
+.fpsDiv{
+	width: 145px;
+}
+
+.bitDiv{
+	width: 165px;
+}
+
+.previewDiv{
+	width: 120px;
+}
+
+.playbackDiv{
+	width: 80px;
+}
+
+.cameratypeSelect{
+	
+}
+
+.resSelectClass{
+	width: 95px;;
+}
+
+.fpsSelectClass{
+	width: 45px;;
+}
+
+.bitSelectClass{
+	width: 65px;;
+}
+
+.resText{
+	width: 90px;
+	text-align: center;
+}
+
+.previewText{
+	width: 90px;
+	text-align: center;
+}
+
+.Bar { position: relative; 
+	width: 200px;/* 宽度 */ 
+/*    border: 1px solid #B1D632; */
+/*    padding: 1px; */
+    background: green;
+}
+.Bar div{ 
+	display: block; 
+	position: relative;
+    background:red;/* 进度条背景颜色 */
+/*	color: red;*/
+    height: 20px; /* 高度 */ 
+    line-height: 20px;/* 必须和高度一致，文本才能垂直居中 */ 
+}
+.Bar div span{ 
+	position: absolute; 
+	width: 200px;/* 宽度 */ 
+	text-align: center; 
+	font-weight: bold; 
+}
+
