@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "packager": "electron-packager . Electron_App --win --out ./OutApp --arch=x64 --electron-version 3.0.9 --overwrite --ignore=node_modules"
   },
   "repository": {
     "type": "git",

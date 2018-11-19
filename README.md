@@ -12,6 +12,8 @@
 1. 安装nodejs
 2. npm install  //安装依赖模块
 3. npm start //启动
+4. npm install electron-packager -g //全局安装打包模块
+5. npm run-script packager //运行json中打包脚本进行打包为exe
 
 #### 项目开发步骤
 
